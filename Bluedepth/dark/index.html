@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="BlueDepth - Explora el océano y descubre su vida."
+    >
+
+    <title>BlueDepth | Modo oscuro</title>
+
+
+    <!-- BOOTSTRAP -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+
+    <!-- CSS PRINCIPAL -->
+
+    <link
+        rel="stylesheet"
+        href="../css/styles.css"
+    >
+
+
+    <!-- TEMA OSCURO -->
+
+    <link
+        rel="stylesheet"
+        href="../css/dark.css"
+    >
+
+
+    <!-- ESTILO INTERNO -->
+
+    <style>
+
+        body {
+            min-height: 100vh;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ==========================================
+         NAVBAR
+    =========================================== -->
+
+    <nav
+        class="navbar navbar-expand-lg navbar-dark navbar-bluedepth sticky-top"
+    >
+
+        <div class="container">
+
+
+            <!-- LOGOTIPO -->
+
+            <a
+                class="navbar-brand d-flex align-items-center gap-2"
+                href="#inicio"
+            >
+
+                <span class="logo-box">
+                    ≋
+                </span>
+
+
+                <span>
+
+                    <span class="brand-name">
+                        Blue<span>Depth</span>
+                    </span>
+
+                    <span class="brand-subtitle">
+                        EXPLORA LO DESCONOCIDO
+                    </span>
+
+                </span>
+
+            </a>
+
+
+            <!-- BOTÓN MÓVIL -->
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Abrir navegación"
+            >
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <!-- MENÚ -->
+
+            <div
+                class="collapse navbar-collapse"
+                id="menuPrincipal"
+            >
+
+                <ul
+                    class="navbar-nav mx-auto mb-2 mb-lg-0"
+                >
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link active"
+                            href="#inicio"
+                        >
+                            Inicio
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="#especies"
+                        >
+                            Especies
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="#profundidad"
+                        >
+                            Profundidad
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="#colores"
+                        >
+                            El océano
+                        </a>
+
+                    </li>
+
+                </ul>
+
+
+                <!-- CAMBIO A MODO CLARO -->
+
+                <a
+                    href="../light/index.html"
+                    class="btn btn-ocean-outline"
+                >
+                    ☀ MODO CLARO
+                </a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ==========================================
+         HERO
+    =========================================== -->
+
+    <header
+        class="hero"
+        id="inicio"
+    >
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+
+                <!-- TEXTO -->
+
+                <div class="col-lg-7">
+
+                    <span class="section-label">
+                        ✦ EXPLORACIÓN OCEÁNICA
+                    </span>
+
+
+                    <h1 class="hero-title">
+
+                        EXPLORA EL OCÉANO,
+
+                        <span>
+                            DESCUBRE SU VIDA
+                        </span>
+
+                    </h1>
+
+
+                    <p class="hero-description">
+
+                        Sumérgete en los misterios del planeta azul.
+                        Descubre especies increíbles y observa cómo
+                        cambia el océano a medida que aumenta la
+                        profundidad.
+
+                    </p>
+
+
+                    <div
+                        class="d-flex flex-wrap gap-2 mt-4"
+                    >
+
+                        <a
+                            href="#especies"
+                            class="btn btn-ocean"
+                        >
+                            EXPLORAR ↓
+                        </a>
+
+
+                        <a
+                            href="#profundidad"
+                            class="btn btn-ocean-outline"
+                        >
+                            PROFUNDIDAD
+                        </a>
+
+                    </div>
+
+
+
+                    <!-- ESTADÍSTICAS -->
+
+                    <div
+                        class="stats-container row g-3"
+                    >
+
+                        <div class="col-12 col-sm-4">
+
+                            <span class="stat-number">
+                                14.828+
+                            </span>
+
+                            <span class="stat-text">
+                                Especies registradas
+                            </span>
+
+                        </div>
+
+
+                        <div class="col-12 col-sm-4">
+
+                            <span class="stat-number">
+                                11.034 m
+                            </span>
+
+                            <span class="stat-text">
+                                Profundidad máxima
+                            </span>
+
+                        </div>
+
+
+                        <div class="col-12 col-sm-4">
+
+                            <span class="stat-number">
+                                89,5 %
+                            </span>
+
+                            <span class="stat-text">
+                                Por explorar
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PANEL DE PROFUNDIDAD -->
+
+                <div
+                    class="col-lg-5"
+                    id="profundidad"
+                >
+
+                    <div class="depth-panel">
+
+                        <span class="depth-panel-title">
+                            ◉ PROFUNDIDAD ACTUAL
+                        </span>
+
+
+                        <p class="depth-number">
+
+                            82
+
+                            <span>
+                                m
+                            </span>
+
+                        </p>
+
+
+                        <p class="depth-subtitle">
+                            Bajo el nivel del mar
+                        </p>
+
+
+                        <div class="depth-progress">
+
+                            <div
+                                class="depth-progress-bar"
+                            ></div>
+
+                        </div>
+
+
+                        <div class="depth-info">
+
+                            <span>
+                                Temperatura
+                            </span>
+
+                            <strong>
+                                24,6 °C
+                            </strong>
+
+                        </div>
+
+
+                        <div class="depth-info">
+
+                            <span>
+                                Presión
+                            </span>
+
+                            <strong>
+                                9,2 atm
+                            </strong>
+
+                        </div>
+
+
+                        <div class="depth-info">
+
+                            <span>
+                                Zona
+                            </span>
+
+                            <strong>
+                                Epipelágica
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==========================================
+         CONTENIDO PRINCIPAL
+    =========================================== -->
+
+    <main>
+
+
+        <!-- ======================================
+             ESPECIES
+        ======================================= -->
+
+        <section
+            class="content-section"
+            id="especies"
+        >
+
+            <div class="container">
+
+
+                <div class="mb-4">
+
+                    <span class="section-label">
+                        CATÁLOGO MARINO
+                    </span>
+
+
+                    <h2 class="section-title">
+                        La vida en cada profundidad
+                    </h2>
+
+
+                    <p class="section-description">
+                        Algunas de las especies que podemos
+                        encontrar bajo la superficie.
+                    </p>
+
+                </div>
+
+
+
+                <!-- GRID BOOTSTRAP -->
+
+                <div class="row g-4">
+
+
+                    <!-- TORTUGA -->
+
+                    <div class="col-12 col-md-6 col-lg-4">
+
+                        <article class="card ocean-card">
+
+                            <img
+                                src="../img/tortuga.jpg"
+                                class="card-img-top"
+                                alt="Tortuga marina"
+                            >
+
+
+                            <div class="card-body">
+
+                                <span class="card-category">
+                                    REPTIL MARINO
+                                </span>
+
+
+                                <h3 class="card-title h5 mt-2">
+                                    Tortuga marina verde
+                                </h3>
+
+
+                                <p class="card-text">
+
+                                    Una de las especies más
+                                    reconocibles de las aguas
+                                    tropicales.
+
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+
+                    <!-- TIBURÓN -->
+
+                    <div class="col-12 col-md-6 col-lg-4">
+
+                        <article class="card ocean-card">
+
+                            <img
+                                src="../img/tiburon.jpg"
+                                class="card-img-top"
+                                alt="Tiburón blanco"
+                            >
+
+
+                            <div class="card-body">
+
+                                <span class="card-category">
+                                    PEZ
+                                </span>
+
+
+                                <h3 class="card-title h5 mt-2">
+                                    Tiburón blanco
+                                </h3>
+
+
+                                <p class="card-text">
+
+                                    Uno de los grandes depredadores
+                                    de los ecosistemas marinos.
+
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+
+                    <!-- MEDUSA -->
+
+                    <div class="col-12 col-md-6 col-lg-4">
+
+                        <article class="card ocean-card">
+
+                            <img
+                                src="../img/medusa.jpg"
+                                class="card-img-top"
+                                alt="Medusa luminiscente"
+                            >
+
+
+                            <div class="card-body">
+
+                                <span class="card-category">
+                                    CNIDARIO
+                                </span>
+
+
+                                <h3 class="card-title h5 mt-2">
+                                    Medusa luminiscente
+                                </h3>
+
+
+                                <p class="card-text">
+
+                                    Una criatura marina adaptada
+                                    a zonas con poca iluminación.
+
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+
+                    <!-- PEZ ABISAL -->
+
+                    <div class="col-12 col-md-6 col-lg-4">
+
+                        <article class="card ocean-card">
+
+                            <img
+                                src="../img/pez-abisal.jpg"
+                                class="card-img-top"
+                                alt="Pez abisal"
+                            >
+
+
+                            <div class="card-body">
+
+                                <span class="card-category">
+                                    PEZ
+                                </span>
+
+
+                                <h3 class="card-title h5 mt-2">
+                                    Pez abisal
+                                </h3>
+
+
+                                <p class="card-text">
+
+                                    Adaptado a soportar la oscuridad
+                                    y las enormes presiones oceánicas.
+
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+
+                    <!-- MANTA GIGANTE -->
+
+                    <div class="col-12 col-md-6 col-lg-4">
+
+                        <article class="card ocean-card">
+
+                            <img
+                                src="../img/manta.jpg"
+                                class="card-img-top"
+                                alt="Manta gigante"
+                            >
+
+
+                            <div class="card-body">
+
+                                <span class="card-category">
+                                    PEZ CARTILAGINOSO
+                                </span>
+
+
+                                <h3 class="card-title h5 mt-2">
+                                    Manta gigante
+                                </h3>
+
+
+                                <p class="card-text">
+
+                                    Una enorme especie marina
+                                    conocida por su elegante movimiento.
+
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+
+                    <!-- CARD INFORMATIVA -->
+
+                    <div class="col-12 col-md-6 col-lg-4">
+
+                        <article class="card ocean-card">
+
+                            <div
+                                class="card-body d-flex flex-column justify-content-center"
+                            >
+
+                                <!-- ESTILO INLINE -->
+
+                                <h3
+                                    class="card-title"
+                                    style="color: #00d9f5;"
+                                >
+                                    Miles de especies
+                                </h3>
+
+
+                                <p class="card-text">
+
+                                    El océano continúa siendo uno
+                                    de los grandes espacios por
+                                    explorar de nuestro planeta.
+
+                                </p>
+
+
+                                <a
+                                    href="#colores"
+                                    class="btn btn-ocean mt-3"
+                                >
+                                    SABER MÁS
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             COLORES DEL OCÉANO
+        ======================================= -->
+
+        <section
+            class="content-section pt-0"
+            id="colores"
+        >
+
+            <div class="container">
+
+
+                <div class="ocean-information">
+
+                    <div class="row align-items-center g-5">
+
+
+                        <!-- TEXTO -->
+
+                        <div class="col-lg-7">
+
+                            <span class="section-label">
+                                ✦ PROFUNDIDAD Y LUZ
+                            </span>
+
+
+                            <h2 class="mt-2">
+                                Un mundo de colores
+                            </h2>
+
+
+                            <p>
+
+                                La luz solar pierde intensidad
+                                conforme aumenta la profundidad.
+                                Los colores cálidos desaparecen
+                                antes, mientras que los tonos
+                                azules penetran a mayor distancia.
+
+                            </p>
+
+
+                            <p>
+
+                                En las regiones más profundas,
+                                la oscuridad domina completamente
+                                el paisaje.
+
+                            </p>
+
+                        </div>
+
+
+
+                        <!-- ESCALA DE COLORES -->
+
+                        <div class="col-lg-5">
+
+                            <div class="color-box">
+
+                                <h3 class="h6 mb-3">
+                                    Transición cromática
+                                </h3>
+
+
+                                <div class="color-line">
+
+                                    <span
+                                        class="color-circle surface-color"
+                                    ></span>
+
+                                    <span>
+                                        Superficie · Cian
+                                    </span>
+
+                                </div>
+
+
+                                <div class="color-line">
+
+                                    <span
+                                        class="color-circle middle-color"
+                                    ></span>
+
+                                    <span>
+                                        Zona media · Azul
+                                    </span>
+
+                                </div>
+
+
+                                <div class="color-line">
+
+                                    <span
+                                        class="color-circle deep-color"
+                                    ></span>
+
+                                    <span>
+                                        Zona profunda · Índigo
+                                    </span>
+
+                                </div>
+
+
+                                <div class="color-line">
+
+                                    <span
+                                        class="color-circle abyss-color"
+                                    ></span>
+
+                                    <span>
+                                        Zona abisal · Oscuridad
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+
+    <footer class="footer-bluedepth">
+
+        <div class="container text-center">
+
+
+            <div
+                class="d-flex justify-content-center align-items-center gap-2 mb-3"
+            >
+
+                <span class="logo-box">
+                    ≋
+                </span>
+
+
+                <span class="brand-name">
+                    Blue<span>Depth</span>
+                </span>
+
+            </div>
+
+
+            <div
+                class="d-flex flex-wrap justify-content-center gap-4 mb-3"
+            >
+
+                <a href="#inicio">
+                    Inicio
+                </a>
+
+                <a href="#especies">
+                    Especies
+                </a>
+
+                <a href="#profundidad">
+                    Profundidad
+                </a>
+
+                <a href="#colores">
+                    El océano
+                </a>
+
+            </div>
+
+
+            <small>
+                Proyecto educativo BlueDepth · DAW
+            </small>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- BOOTSTRAP -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+</body>
+
+</html>
