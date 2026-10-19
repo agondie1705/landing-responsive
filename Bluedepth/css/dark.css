@@ -3,6 +3,7 @@
    TEMA OSCURO
 */
 
+/* Sobrescribe el fondo y texto general definidos en styles.css */
 body {
     background-color: #030914;
     color: #f1f7fb;
@@ -11,6 +12,7 @@ body {
 
 /* NAVBAR */
 
+/* Cambia el navbar de Bootstrap a la paleta oscura */
 .navbar-bluedepth {
     background-color: #050d18;
     border-bottom-color: #16364d;
@@ -40,6 +42,7 @@ body {
 
 /* BOTONES */
 
+/* Sobrescribe el botón del tema claro usando colores del modo oscuro */
 .btn-ocean {
     background-color: #00d9f5;
     border-color: #00d9f5;
@@ -66,6 +69,7 @@ body {
 /* HERO */
 
 .hero {
+    /* Degradado oscuro colocado encima de la imagen del océano */
     background-image:
         linear-gradient(
             90deg,
@@ -109,6 +113,7 @@ body {
 /* PANEL PROFUNDIDAD */
 
 .depth-panel {
+    /* rgba permite utilizar un fondo oscuro con un poco de transparencia */
     background-color: rgba(7, 21, 37, 0.94);
 
     border-color: #16364d;
@@ -162,6 +167,7 @@ body {
 
 /* CARDS */
 
+/* Cambia las cards de Bootstrap sin modificar su estructura HTML */
 .ocean-card {
     background-color: #071525;
 

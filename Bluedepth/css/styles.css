@@ -2,16 +2,19 @@
    Tema claro */
 
 
-/*  CONFIGURACIÓN GENERAL  */
+/* CONFIGURACIÓN GENERAL */
 
+/* Hace que padding y border se incluyan dentro del tamaño del elemento */
 * {
     box-sizing: border-box;
 }
 
+/* Hace que el movimiento hacia los enlaces internos sea suave */
 html {
     scroll-behavior: smooth;
 }
 
+/* Estilos generales que afectan a toda la página */
 body {
     margin: 0;
     background-color: #eef8ff;
@@ -20,7 +23,7 @@ body {
 }
 
 
-/*  COLORES Y TEXTOS  */
+/* COLORES Y TEXTOS */
 
 .text-blue {
     color: #087ea4;
@@ -30,6 +33,7 @@ body {
     color: #55758c;
 }
 
+/* Texto pequeño que aparece encima de los títulos de las secciones */
 .section-label {
     color: #0787ae;
     font-size: 0.75rem;
@@ -40,11 +44,13 @@ body {
 
 /* NAVBAR */
 
+/* Clase propia que modifica el navbar de Bootstrap */
 .navbar-bluedepth {
     background-color: #ffffff;
     border-bottom: 1px solid #c5e1f0;
 }
 
+/* Cuadrado que utilizamos como icono del logotipo */
 .logo-box {
     width: 42px;
     height: 42px;
@@ -82,8 +88,7 @@ body {
 }
 
 
-/* Sobrescribimos estilos de Bootstrap */
-
+/* Sobrescribe los estilos que Bootstrap aplica a los enlaces del navbar */
 .navbar-bluedepth .nav-link {
     color: #55758c;
     font-size: 0.9rem;
@@ -97,11 +102,7 @@ body {
 
 /* BOTONES */
 
-/*
-   Clase propia que modifica la apariencia
-   de los botones de Bootstrap.
-*/
-
+/* Clase propia que modifica la apariencia de los botones de Bootstrap */
 .btn-ocean {
     background-color: #0787ae;
     border-color: #0787ae;
@@ -112,12 +113,14 @@ body {
     padding: 0.7rem 1.4rem;
 }
 
+/* :hover aplica estos estilos cuando el ratón está encima del botón */
 .btn-ocean:hover {
     background-color: #056b8c;
     border-color: #056b8c;
     color: #ffffff;
 }
 
+/* Segundo tipo de botón con fondo transparente */
 .btn-ocean-outline {
     background-color: transparent;
 
@@ -136,6 +139,7 @@ body {
 
 /* HERO */
 
+/* Hero es la sección principal que aparece al entrar en la página */
 .hero {
     min-height: 520px;
 
@@ -144,6 +148,7 @@ body {
 
     position: relative;
 
+    /* Combina un degradado con la imagen para que el texto sea más legible */
     background-image:
         linear-gradient(
             90deg,
@@ -166,6 +171,7 @@ body {
 
     color: #16324a;
 
+    /* clamp cambia el tamaño del título dependiendo del tamaño de pantalla */
     font-size: clamp(2.5rem, 6vw, 4.5rem);
     font-weight: 900;
 
@@ -256,11 +262,13 @@ body {
     color: #6c899d;
 }
 
+/* Fondo sobre el que se dibuja la barra de profundidad */
 .depth-progress {
     height: 8px;
 
     margin: 1.5rem 0;
 
+    /* Evita que la barra interior salga de los bordes redondeados */
     overflow: hidden;
 
     background-color: #cde6f3;
@@ -268,6 +276,7 @@ body {
     border-radius: 20px;
 }
 
+/* Representa visualmente el porcentaje de profundidad */
 .depth-progress-bar {
     width: 35%;
     height: 100%;
@@ -291,9 +300,7 @@ body {
 }
 
 
-/* =========================================
-   SECCIONES
-========================================= */
+/* SECCIONES */
 
 .content-section {
     padding: 5rem 0;
@@ -315,9 +322,11 @@ body {
 
 /* CARDS BOOTSTRAP PERSONALIZADAS */
 
+/* Sobrescribe la card de Bootstrap con nuestro diseño */
 .ocean-card {
     height: 100%;
 
+    /* Evita que el contenido salga de los bordes redondeados */
     overflow: hidden;
 
     background-color: #ffffff;
@@ -327,11 +336,13 @@ body {
 
     box-shadow: 0 8px 20px rgba(20, 80, 110, 0.08);
 
+    /* Hace suave el movimiento de la tarjeta al pasar el ratón */
     transition:
         transform 0.2s ease,
         box-shadow 0.2s ease;
 }
 
+/* Eleva ligeramente la tarjeta cuando pasamos el ratón */
 .ocean-card:hover {
     transform: translateY(-5px);
 
@@ -340,6 +351,8 @@ body {
 
 .ocean-card .card-img-top {
     height: 190px;
+
+    /* Recorta la imagen para llenar su espacio sin deformarla */
     object-fit: cover;
 }
 
@@ -403,6 +416,7 @@ body {
     border-bottom: 1px solid #d8eaf3;
 }
 
+/* Elimina la línea inferior únicamente del último elemento */
 .color-line:last-child {
     border-bottom: 0;
 }
@@ -411,6 +425,7 @@ body {
     width: 15px;
     height: 15px;
 
+    /* Impide que Flexbox reduzca el tamaño del cuadrado */
     flex-shrink: 0;
 
     border-radius: 4px;
@@ -456,6 +471,7 @@ body {
 
 /* RESPONSIVE */
 
+/* Modifica algunos tamaños cuando la pantalla es de tablet o menor */
 @media (max-width: 991px) {
 
     .hero {
@@ -473,6 +489,7 @@ body {
 }
 
 
+/* Modifica el diseño específicamente para móviles */
 @media (max-width: 576px) {
 
     .hero-title {
