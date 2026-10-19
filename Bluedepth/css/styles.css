@@ -1,10 +1,8 @@
-/* =========================================
-   BLUEDEPTH - ESTILOS PRINCIPALES
-   Tema claro
-========================================= */
+/* BLUEDEPTH - ESTILOS PRINCIPALES
+   Tema claro */
 
 
-/* ---------- CONFIGURACIÓN GENERAL ---------- */
+/*  CONFIGURACIÓN GENERAL  */
 
 * {
     box-sizing: border-box;
@@ -22,7 +20,7 @@ body {
 }
 
 
-/* ---------- COLORES Y TEXTOS ---------- */
+/*  COLORES Y TEXTOS  */
 
 .text-blue {
     color: #087ea4;
@@ -40,9 +38,7 @@ body {
 }
 
 
-/* =========================================
-   NAVBAR
-========================================= */
+/* NAVBAR */
 
 .navbar-bluedepth {
     background-color: #ffffff;
@@ -99,9 +95,7 @@ body {
 }
 
 
-/* =========================================
-   BOTONES
-========================================= */
+/* BOTONES */
 
 /*
    Clase propia que modifica la apariencia
@@ -140,9 +134,7 @@ body {
 }
 
 
-/* =========================================
-   HERO
-========================================= */
+/* HERO */
 
 .hero {
     min-height: 520px;
@@ -198,9 +190,7 @@ body {
 }
 
 
-/* =========================================
-   ESTADÍSTICAS
-========================================= */
+/* ESTADÍSTICAS */
 
 .stats-container {
     max-width: 650px;
@@ -226,9 +216,7 @@ body {
 }
 
 
-/* =========================================
-   PANEL DE PROFUNDIDAD
-========================================= */
+/* PANEL DE PROFUNDIDAD */
 
 .depth-panel {
     padding: 2rem;
@@ -325,9 +313,7 @@ body {
 }
 
 
-/* =========================================
-   CARDS BOOTSTRAP PERSONALIZADAS
-========================================= */
+/* CARDS BOOTSTRAP PERSONALIZADAS */
 
 .ocean-card {
     height: 100%;
@@ -377,9 +363,7 @@ body {
 }
 
 
-/* =========================================
-   SECCIÓN INFORMACIÓN
-========================================= */
+/* SECCIÓN INFORMACIÓN */
 
 .ocean-information {
     padding: 2.5rem;
@@ -449,9 +433,7 @@ body {
 }
 
 
-/* =========================================
-   FOOTER
-========================================= */
+/* FOOTER */
 
 .footer-bluedepth {
     padding: 3rem 0;
@@ -472,9 +454,7 @@ body {
 }
 
 
-/* =========================================
-   RESPONSIVE
-========================================= */
+/* RESPONSIVE */
 
 @media (max-width: 991px) {
 
