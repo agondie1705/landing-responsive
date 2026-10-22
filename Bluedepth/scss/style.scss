@@ -26,7 +26,7 @@ $spacing-base: 1rem;
 //deja un espacio de 5 rem en la parte superior e inferior
 // sin margenes internos a los lados
 .content-section {
-    padding: spacing(5) 0;
+    padding: 5rem 0;
 }
 //mixin
 //plantilla para crear contenedores con estilos compartidos
@@ -63,8 +63,8 @@ $spacing-base: 1rem;
     //el & es como btn-ocean:hover
     &:hover {
         background-color: color.adjust($primary, $lightness: -8%);
-        border-color: color.adjust($primary, $lightness: -8%);
-        color: white;
+        border-color: color.adjust($primary, $lightness: -8%)
+        color white;
     }
 }
 .hero-title {

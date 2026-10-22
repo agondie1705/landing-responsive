@@ -31,8 +31,7 @@
 }
 .btn-ocean:hover {
   background-color: rgb(2.1263135088%, 41.0074748131%, 52.854078648%);
-  border-color: rgb(2.1263135088%, 41.0074748131%, 52.854078648%);
-  color: white;
+  border-color: rgb(2.1263135088%, 41.0074748131%, 52.854078648%) color white;
 }
 
 .hero-title {
