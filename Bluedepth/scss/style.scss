@@ -1,0 +1,122 @@
+
+//usaremos sass para conseguir el color hover
+@use "sass:color";
+//bloque de colores
+$primary: #4eb9da;
+$primary-hover: #6a96a5;
+
+$text-dark: #0b253b;
+$text: #18537e;
+$text-muted: #455966;
+
+$background: #eef8ff;
+$surface: #ffffff;
+$surface-blue: #dcefff;
+
+$border: #c5e1f0;
+
+$cyan: #19c9e6;
+
+$spacing-base: 1rem;
+
+//funcion para dejar los espacios cuadriculados
+@function spacing($number) {
+    @return $spacing-base * $number;
+}
+//deja un espacio de 5 rem en la parte superior e inferior
+// sin margenes internos a los lados
+.content-section {
+    padding: 5rem 0;
+}
+//mixin
+//plantilla para crear contenedores con estilos compartidos
+@mixin panel($background, $radius: 16px) {
+    background-color: $background;
+    border: 1px solid $border;
+    border-radius: $radius;
+}
+.depth-panel {
+    padding: spacing(2);
+
+    @include panel(rgba(255, 255, 255, 0.92));
+
+    box-shadow: 0 15px 35px rgba(20, 80, 110, 0.12);
+}
+.ocean-information {
+    padding: 2.5rem;
+
+    @include panel($surface-blue);
+}
+.color-box {
+    padding: 1.5rem;
+
+    @include panel($surface, 12px);
+}
+
+
+//color original
+.btn-ocean {
+    background-color: $primary;
+    border-color: $primary;
+    color: white;
+    //oscurece el color principal un 8%
+    //el & es como btn-ocean:hover
+    &:hover {
+        background-color: color.adjust($primary, $lightness: -8%);
+        border-color: color.adjust($primary, $lightness: -8%)
+        color white;
+    }
+}
+.hero-title {
+    max-width: 700px;
+    margin-top: spacing(1);
+
+    color: $text-dark;
+    //hace que la letra sea responsive
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    //letra gruesa
+    font-weight: 900;
+    //acerca lineas de textos entre si
+    line-height: 0.95;
+    //reduce el espacio horizontal entre letras horizontales
+    letter-spacing: -3px;
+    //hace que cualquier frase o palabra que tenga span
+    //se comporta como un bloque diferente
+    span {
+        display: block;
+        color: $primary;
+    }
+}
+.ocean-card {
+    //la tarjeta ocupa el 100% y hace que no sobresalga nada
+    height: 100%;
+    overflow: hidden;
+    //con mixin aplica al borde fondo y esquinas 14 px
+    @include panel($surface, 14px);
+    //sombra diluida
+    box-shadow: 0 8px 20px rgba(20, 80, 110, 0.08);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 14px 28px rgba(20, 80, 110, 0.15);
+    }
+
+    .card-img-top {
+        height: 190px;
+        object-fit: cover;
+    }
+
+    .card-title {
+        color: $text-dark;
+        font-weight: bold;
+    }
+
+    .card-text {
+        color: $text;
+        font-size: 0.9rem;
+    }
+}

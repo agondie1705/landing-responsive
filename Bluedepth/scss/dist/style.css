@@ -1,0 +1,75 @@
+.content-section {
+  padding: 5rem 0;
+}
+
+.depth-panel {
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.92);
+  border: 1px solid #c5e1f0;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(20, 80, 110, 0.12);
+}
+
+.ocean-information {
+  padding: 2.5rem;
+  background-color: #dcefff;
+  border: 1px solid #c5e1f0;
+  border-radius: 16px;
+}
+
+.color-box {
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border: 1px solid #c5e1f0;
+  border-radius: 12px;
+}
+
+.btn-ocean {
+  background-color: #4eb9da;
+  border-color: #4eb9da;
+  color: white;
+}
+.btn-ocean:hover {
+  background-color: #2cacd3;
+  border-color: #2cacd3 color white;
+}
+
+.hero-title {
+  max-width: 700px;
+  margin-top: 1rem;
+  color: #0b253b;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -3px;
+}
+.hero-title span {
+  display: block;
+  color: #4eb9da;
+}
+
+.ocean-card {
+  height: 100%;
+  overflow: hidden;
+  background-color: #ffffff;
+  border: 1px solid #c5e1f0;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(20, 80, 110, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.ocean-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 28px rgba(20, 80, 110, 0.15);
+}
+.ocean-card .card-img-top {
+  height: 190px;
+  object-fit: cover;
+}
+.ocean-card .card-title {
+  color: #0b253b;
+  font-weight: bold;
+}
+.ocean-card .card-text {
+  color: #18537e;
+  font-size: 0.9rem;
+}
